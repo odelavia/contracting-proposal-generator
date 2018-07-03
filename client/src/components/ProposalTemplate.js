@@ -7,9 +7,11 @@ class ProposalTemplate extends Component {
     this.state = {}
   }
 
+  		// window.print();
+
   render() {
     return (
-      <div className='templateContainer'>
+      <div className='templateContainer page' contenteditable="true">
         <h1>proposal</h1>
       </div>
     );
