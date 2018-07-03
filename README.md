@@ -125,6 +125,7 @@ This contractor-proposal-generator app is open source. Any feedback, issues, con
 
 For more information:  
 [Contributing Instructions](https://github.com/odelavia/contractor-proposal-generator/blob/master/CONTRIBUTING.md)  
+[Pull Request Template](https://github.com/odelavia/contractor-proposal-generator/blob/master/PULL_REQUEST_TEMPLATE.md)  
 [License](https://github.com/odelavia/contractor-proposal-generator/blob/master/LICENSE)  
 
 If you found this repository helpful, please give me a follow and star this repository. Thanks for all the support!
