@@ -2,10 +2,10 @@
 a proposal generator for construction industry contractors
 
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ziggysauce/ziggy-react-app/blob/master/LICENSE)
-[![node](https://img.shields.io/badge/node-v10.1.0-brightgreen.svg)](https://nodejs.org/en/)
-[![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/odelavia/contractor-proposal-generator/pulls)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/odelavia/contractor-proposal-generator/blob/master/LICENSE)
+[![node](https://img.shields.io/badge/node-v10.5.0-brightgreen.svg)](https://nodejs.org/en/)
+[![npm](https://img.shields.io/badge/npm-v6.1.0-blue.svg)](https://www.npmjs.com/)
 
 
 
@@ -52,8 +52,8 @@ a proposal generator for construction industry contractors
 
 
 ## Requirements
-* [Node](https://nodejs.org/en/) (v9+)
-* [NPM](https://www.npmjs.com/) (v5+)
+* [Node](https://nodejs.org/en/) (v10+)
+* [NPM](https://www.npmjs.com/) (v6+)
 
 
 ### Directory Structure
