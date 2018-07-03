@@ -9,7 +9,7 @@ class ProposalTemplate extends Component {
 
   render() {
     return (
-      <div>
+      <div className='templateContainer'>
         <h1>proposal</h1>
       </div>
     );
