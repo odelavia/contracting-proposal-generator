@@ -1,30 +1,24 @@
 div.page-break {
-	page-break-after: always;
+	page-break-after: always;  	/* Force page breaks after */
 }
-/* For top-level headings only */
+
 h1 {
-	/* Force page breaks after */
 	page-break-before: always;
 }
-/* For all headings */
+
 h1, h2, h3, h4, h5 {
-	/* Avoid page breaks immediately */
   page-break-after: avoid;
   margin: 0;
 }
-/* For all paragraph tags */
+
 p {
-	/* Reset the margin so that the text starts and ends at the expected marks */
 	margin: 0;
 }
-/* For adjacent paragraph tags */
+
 p + p {
-	/* Restore the spacing between the paragraphs */
-	margin-top: 0.5cm;
+	margin-top: 0.5cm; 	/* Restore the spacing between paragraphs */
 }
-/* For links in the document */
 a {
-	/* Prevent colorization or decoration */
 	text-decoration: none;
 	color: black;
 }
@@ -49,13 +43,9 @@ a {
   //   0 -20px 0 -10px #eee,                 /* The third layer */
   //   0 -20px 1px -9px rgba(0,0,0,0.15);    /* The third layer shadow */
   // padding: 30px;
-  /* Styles for better appearance on screens only -- are reset to defaults in print styles later */
-	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
-	width: 21.6cm;
-	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
-	min-height: 27.9cm;
-	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
-	padding-left: 2cm;
+	width: 21.6cm; 	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
+	min-height: 27.9cm; 	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
+	padding-left: 2cm; /* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
 	padding-top: 2cm;
 	padding-right: 2cm;
   padding-bottom: 2cm;
@@ -85,13 +75,13 @@ a {
   grid-area: proposalNo;
 }
 
+/* services available section */
 #servicesAvail {
   grid-area: availServices;
   width: 170px;
   padding: 8px 0 8px 0;
 }
 
-/* services available section */
 .services-available {
   position: relative;
   display: grid;
@@ -115,11 +105,6 @@ a {
   height: 125px;
   align-self: flex-start;
 }
-
-// .customer-address-container {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 #body {
   grid-area: body;
@@ -227,19 +212,14 @@ a {
 }
 
 /* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
-@page {
-	/* You can only change the size, margins, orphans, widows and page breaks here */
-
-	/* Require that at least this many lines of a paragraph must be left at the bottom of a page */
-	orphans: 4;
-	/* Require that at least this many lines of a paragraph must be left at the top of a new page */
-	widows: 2;
+@page { /* You can only change the size, margins, orphans, widows and page breaks here */
+	orphans: 4; 	/* Require that at least this many lines of a paragraph must be left at the bottom of a page */
+	widows: 2; 	/* Require that at least this many lines of a paragraph must be left at the top of a new page */
 }
-/* When the document is actually printed */
-@media print {
+
+@media print { /* When the document is actually printed */
 	html, body {
-		/* Reset the document's background color */
-		background-color: #fff;
+		background-color: #fff; 		/* Reset the document's background color */
 	}
 	.page {
 		/* Reset all page styles that have been for better screen appearance only */
@@ -253,8 +233,6 @@ a {
 		border-radius: initial !important;
 		background: initial !important;
 		box-shadow: initial !important;
-
-		/* Force page breaks after each .page element of the document */
-		page-break-after: always;
+		page-break-after: always; 		/* Force page breaks after each .page element of the document */
 	}
 }
