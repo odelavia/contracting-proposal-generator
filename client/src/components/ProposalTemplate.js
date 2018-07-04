@@ -45,16 +45,28 @@ class ProposalTemplate extends Component {
         </TemplateSection>
         <TemplateSection id='body'>
           <section className='body-container'>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
-            <div className='border-bottom'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
+            <div className='border-bottom-small'></div>
           </section>
         </TemplateSection>
         <section id='legal'>
@@ -64,10 +76,10 @@ class ProposalTemplate extends Component {
           </div>
         </section>
         <section id='sig-date'>
-          <OverLineInput className='sig1'>Signature</OverLineInput>
-          <OverLineInput className='date1'>Date</OverLineInput>
-          <OverLineInput className='sig2'>Signature</OverLineInput>
-          <OverLineInput className='date2'>Date</OverLineInput>
+          <OverLineInput className='sig1 padd5'>Signature</OverLineInput>
+          <OverLineInput className='date1 padd5'>Date</OverLineInput>
+          <OverLineInput className='sig2 padd5'>Signature</OverLineInput>
+          <OverLineInput className='date2 padd5'>Date</OverLineInput>
         </section>
         <TemplateSection id='cost'>
           <section className='cost-container'>

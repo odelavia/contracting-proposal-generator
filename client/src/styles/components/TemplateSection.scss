@@ -11,6 +11,10 @@
 .border-bottom {
   height: 40px;
   border-bottom: $off-red 1px solid;
-  // margin-bottom: 5px;
+  width: 100%
+}
+.border-bottom-small {
+  height: 20px;
+  border-bottom: $off-red 1px solid;
   width: 100%
 }
