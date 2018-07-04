@@ -38,8 +38,9 @@ body {
 /* ------- Pagination */
 
 h1, h2 {
-page-break-after: avoid;
-page-break-before: always;
+  margin: 0;
+  page-break-after: avoid;
+  page-break-before: always;
 }
 
 p {
@@ -110,19 +111,6 @@ blockquote {
   margin-right: 20%;
   }
 
-/*  ------ Special sections, using CSS class identifiers */
-
-// pre {
-//   font-family: "Comic Sans", fantasy, serif;
-//   font-style: italic;
-//   margin-left: 20%;
-// }
-
-// p.fineprint {
-//   font-size: 70%;
-//   text-indent: 0em;
-// }
-
-// pre.copyright, .noprint {
-//   display:none;
-// }
+.off-red {
+  color: $off-red;
+}

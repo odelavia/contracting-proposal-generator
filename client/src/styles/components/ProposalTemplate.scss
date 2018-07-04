@@ -1,18 +1,47 @@
-// body {
-//   background-color: #333;
-//   padding: 2em;
-// }
-
-.templateContainer {
-  // width: 777px;
-  // height: 1017px;
-  // background-color: blue;
-    // background-color: $off-white;
-    // color: $off-black;
-    // box-shadow: 0px 0px 10px 2px lighten($off-black, 50%);
+div.page-break {
+	page-break-after: always;
 }
+/* For top-level headings only */
+h1 {
+	/* Force page breaks after */
+	page-break-before: always;
+}
+/* For all headings */
+h1, h2, h3, h4, h5 {
+	/* Avoid page breaks immediately */
+  page-break-after: avoid;
+  margin: 0;
+}
+/* For all paragraph tags */
+p {
+	/* Reset the margin so that the text starts and ends at the expected marks */
+	margin: 0;
+}
+/* For adjacent paragraph tags */
+p + p {
+	/* Restore the spacing between the paragraphs */
+	margin-top: 0.5cm;
+}
+/* For links in the document */
+a {
+	/* Prevent colorization or decoration */
+	text-decoration: none;
+	color: black;
+}
+
+.template-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+  'proposalNo head head head head availServices'
+  'namephone namephone namephone address address address'
+  'body body body body body body'
+  'legal legal legal legal legal legal'
+  'sig sig sig sig total total';
+  // box-shadow: 0px 0px 10px 2px lighten($off-black, 50%);
+}
+
 .page {
-  // background: #fff;
   // box-shadow:
   //   0 -1px 1px rgba(0,0,0,0.15),          /* The top layer shadow */
   //   0 -10px 0 -5px #eee,                  /* The second layer */
@@ -36,40 +65,158 @@
 	outline: 0;
 }
 
-div.page-break {
-	page-break-after: always;
+.padd5 {
+  padding: 5px 5px 0 5px;
 }
-/* For top-level headings only */
-h1 {
-	/* Force page breaks after */
-	page-break-before: always;
+
+.margin3-75 {
+  margin: 3.75px 0 3.75 0;
 }
-/* For all headings */
-h1, h2, h3, h4, h5, h6 {
-	/* Avoid page breaks immediately */
-	page-break-after: avoid;
+
+.pad-horizontal {
+  padding: 0 5px 0 5px;
 }
-/* For all paragraph tags */
-p {
-	/* Reset the margin so that the text starts and ends at the expected marks */
-	margin: 0;
+
+.proposalNo-container {
+  width: 170px;
 }
-/* For adjacent paragraph tags */
-p + p {
-	/* Restore the spacing between the paragraphs */
-	margin-top: 0.5cm;
+
+#proposalNo {
+  grid-area: proposalNo;
 }
-/* For links in the document */
-a {
-	/* Prevent colorization or decoration */
-	text-decoration: none;
-	color: black;
+
+#servicesAvail {
+  grid-area: availServices;
+  width: 170px;
+  padding: 8px 0 8px 0;
 }
-/* For tables in the document */
-table {
-	/* Avoid page breaks inside */
-	page-break-inside: avoid;
+
+/* services available section */
+.services-available {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'col1 col2';
+  align-self: center;
+  flex-wrap: wrap;
+  height: 100%;
 }
+
+#namephone {
+  grid-area: namephone;
+  margin-right: 10px;
+  height: 125px;
+}
+
+#customer-address {
+  grid-area: address;
+  margin-left: 10px;
+  height: 125px;
+}
+
+// .customer-address-container {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+#body {
+  grid-area: body;
+  padding-bottom: 0;
+  height: 445px;
+}
+
+#legal {
+  grid-area: legal;
+  display: flex;
+}
+
+.acceptance {
+  display:inline-block;
+  width: 210px;
+}
+
+.small-print {
+  display: inline;
+  font-size: 14px;
+}
+
+#sig-date {
+  grid-area: sig;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'sig1 date1'
+  'sig2 date2';
+  justify-items: center;
+  height: 125px;
+}
+
+.sig1 {
+  grid-area: sig1;
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.date1 {
+  grid-area: date1;
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.sig2 {
+  grid-area: sig2;
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.date2 {
+  grid-area: date2;
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#cost {
+  grid-area: total;
+  padding-bottom: 0;
+  height: calc( 45px + (2 * 40px));
+}
+
+.cost-container {
+  height: 100%;
+}
+
+.cost-line {
+  display: flex;
+}
+
+.labor {
+  width: 200px !important;
+  border-right: $off-red 1px dotted;
+}
+.tax {
+  width: 200px !important;
+  border-right: $off-red 1px dotted;
+}
+.total {
+  width: 200px !important;
+  border-right: $off-red 1px dotted;
+  height: 41px;
+}
+
+.cents-box {
+  width: 47.4px;
+  border-bottom: $off-red 1px solid;
+  height: 40px;
+}
+
 /* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
 @page {
 	/* You can only change the size, margins, orphans, widows and page breaks here */

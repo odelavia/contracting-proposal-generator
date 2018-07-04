@@ -1,0 +1,30 @@
+.header {
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: center;
+  width: 300px;
+  height: 85px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+.address-container {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.address {
+  padding: 0 5px 0 5px;
+}

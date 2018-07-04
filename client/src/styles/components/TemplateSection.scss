@@ -1,0 +1,16 @@
+.template-section {
+  display: flex;
+  flex-direction: column;
+  border: $off-red 2px solid;
+  border-radius: 12px;
+  // padding: 5px;
+  color: $off-red;
+  // padding-bottom: 20px;
+  height: 85px;
+}
+.border-bottom {
+  height: 40px;
+  border-bottom: $off-red 1px solid;
+  // margin-bottom: 5px;
+  width: 100%
+}
