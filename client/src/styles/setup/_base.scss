@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	font-family: "Roboto", -apple-system, "San Francisco", "Segoe UI", "Helvetica Neue", sans-serif;
 	font-size: 12pt;
-	background-color: #eee;
+  background-color: #eee;
 }
 
 html {
@@ -243,15 +243,3 @@ blockquote {
   margin-left: 20%;
   margin-right: 20%;
   }
-
-@page { margin: 2cm }
-
-@page :first {
-  margin-top: 10cm
-}
-
-/* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
-// @page { /* You can only change the size, margins, orphans, widows and page breaks here */
-// 	orphans: 4; 	/* Require that at least this many lines of a paragraph must be left at the bottom of a page */
-// 	widows: 2; 	/* Require that at least this many lines of a paragraph must be left at the top of a new page */
-// }

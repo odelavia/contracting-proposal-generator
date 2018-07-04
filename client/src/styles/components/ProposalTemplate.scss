@@ -1,6 +1,8 @@
 .template-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 140px 484px 54px 126px; /* need for printer to print correctly with default/no settings*/
+  // grid-template-rows: 100px 140px 484px 53px 125px; /* need for printer to print correctly with no padding settings*/
   grid-template-areas:
   'proposalNo head head head head availServices'
   'namephone namephone namephone address address address'
@@ -25,7 +27,8 @@
   padding-bottom: 2cm;
   margin: 1cm auto;
 	background: #fff;
-	outline: 0;
+  outline: 0;
+  // border: #000 1px solid;
 }
 
 .pad5 {
@@ -188,22 +191,34 @@
   color: $off-red;
 }
 
+@page {
+  // margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+/* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
+// @page { /* You can only change the size, margins, orphans, widows and page breaks here */
+// 	orphans: 4; 	/* Require that at least this many lines of a paragraph must be left at the bottom of a page */
+// 	widows: 2; 	/* Require that at least this many lines of a paragraph must be left at the top of a new page */
+// }
+
 @media print { /* When the document is actually printed */
 	html, body {
 		background-color: #fff; 		/* Reset the document's background color */
-	}
+  }
+  div{
+    page-break-inside: avoid;
+  }
 	.page {
-	// 	/* Reset all page styles that have been for better screen appearance only */
-	// 	/* Break cascading by using the !important rule */
-	// 	/* These resets are absolute must-haves for the print styles and the specificity may be higher elsewhere */
-	// 	width: initial !important;
-		min-height: initial !important;
+		// width: initial !important; /* need for printer to print correctly with no padding settings*/
+		// height: initial !important;
 		margin: 0 !important;
-	// 	padding: 0 !important;
-	// 	border: initial !important;
+		// padding: 90px 0 0 0 !important; /* need for printer to print correctly with no padding settings*/
 		border-radius: initial !important;
 		background: initial !important;
 		box-shadow: initial !important;
-	// 	page-break-after: always; 		/* Force page breaks after each .page element of the document */
-	}
+		page-break-after: always; 		/* Force page breaks after each .page element of the document */
+  }
 }
