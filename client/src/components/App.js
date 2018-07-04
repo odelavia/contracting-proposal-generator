@@ -4,7 +4,6 @@ import ProposalTemplate from './ProposalTemplate';
 const App = () => (
   <div>
     <ProposalTemplate />
-    <ProposalTemplate />
   </div>
 
 );

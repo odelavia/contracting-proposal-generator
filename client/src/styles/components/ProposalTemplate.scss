@@ -28,7 +28,7 @@
 	outline: 0;
 }
 
-.padd5 {
+.pad5 {
   padding: 5px 5px 0 5px;
 }
 
@@ -184,11 +184,9 @@
   height: 40px;
 }
 
-/* Use CSS Paged Media to switch from continuous documents to sheet-like documents with separate pages */
-// @page { /* You can only change the size, margins, orphans, widows and page breaks here */
-// 	orphans: 4; 	/* Require that at least this many lines of a paragraph must be left at the bottom of a page */
-// 	widows: 2; 	/* Require that at least this many lines of a paragraph must be left at the top of a new page */
-// }
+.off-red {
+  color: $off-red;
+}
 
 @media print { /* When the document is actually printed */
 	html, body {

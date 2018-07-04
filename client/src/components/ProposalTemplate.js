@@ -16,8 +16,8 @@ class ProposalTemplate extends Component {
     return (
       <div className='template-container page' contentEditable="true" suppressContentEditableWarning>
         <TemplateSection id="proposalNo" className='proposalNo-container'>
-          <div className='border-bottom padd5'>Proposal No. </div>
-          <div className='padd5'>Date </div>
+          <div className='border-bottom pad5'>Proposal No. </div>
+          <div className='pad5'>Date </div>
         </TemplateSection>
         <Header/>
         <TemplateSection id='servicesAvail' >
@@ -32,14 +32,14 @@ class ProposalTemplate extends Component {
         </TemplateSection>
         <TemplateSection id='namephone'>
           <section className='namephone-container'>
-            <div className='border-bottom padd5'>Name</div>
+            <div className='border-bottom pad5'>Name</div>
             <div className='border-bottom'></div>
-            <div className='padd5'>Phone</div>
+            <div className='pad5'>Phone</div>
           </section>
         </TemplateSection>
         <TemplateSection id='customer-address'>
           <section className='customer-address-container'>
-            <div className='border-bottom padd5'>Address</div>
+            <div className='border-bottom pad5'>Address</div>
             <div className='border-bottom'></div>
           </section>
         </TemplateSection>
@@ -76,23 +76,23 @@ class ProposalTemplate extends Component {
           </div>
         </section>
         <section id='sig-date'>
-          <OverLineInput className='sig1 padd5'>Signature</OverLineInput>
-          <OverLineInput className='date1 padd5'>Date</OverLineInput>
-          <OverLineInput className='sig2 padd5'>Signature</OverLineInput>
-          <OverLineInput className='date2 padd5'>Date</OverLineInput>
+          <OverLineInput className='sig1 pad5'>Signature</OverLineInput>
+          <OverLineInput className='date1 pad5'>Date</OverLineInput>
+          <OverLineInput className='sig2 pad5'>Signature</OverLineInput>
+          <OverLineInput className='date2 pad5'>Date</OverLineInput>
         </section>
         <TemplateSection id='cost'>
           <section className='cost-container'>
             <div className='cost-line'>
-              <div className='border-bottom padd5 labor'>Total Labor</div>
+              <div className='border-bottom pad5 labor'>Total Labor</div>
               <div className='cents-box'></div>
             </div>
             <div className='cost-line'>
-              <div className='border-bottom padd5 tax'>Tax</div>
+              <div className='border-bottom pad5 tax'>Tax</div>
               <div className='cents-box'></div>
             </div>
             <div className='cost-line'>
-              <div className='padd5 total'>Grand Total</div>
+              <div className='pad5 total'>Grand Total</div>
             </div>
           </section>
         </TemplateSection>
