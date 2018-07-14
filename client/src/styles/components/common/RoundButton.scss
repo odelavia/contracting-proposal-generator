@@ -1,0 +1,33 @@
+button.button-container {
+  // position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color:purple;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 5px rgba(75, 75, 75, 0.4);
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  // shadowOffset:{  width: -1,  height: 5,  }
+}
+
+button:hover{
+    opacity: .85;
+}
+
+button:focus {
+  outline:0;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.button-text {
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+}
